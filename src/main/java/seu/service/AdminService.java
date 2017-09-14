@@ -1,12 +1,13 @@
 package seu.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import seu.dao.*;
 import seu.domain.*;
 import seu.domain.Class;
 
 import java.util.List;
-
+@Service
 public class AdminService {
     @Autowired
     ClassDao classDao;
@@ -165,7 +166,7 @@ public class AdminService {
     }
 
     //管理员获取某个商品信息
-    public List<Commodity> getCommodityById(int id) {
+    public Commodity getCommodityById(int id) {
         return commodityDao.queryCommodityById(id);
     }
 
