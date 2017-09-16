@@ -11,7 +11,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 @Repository
-public class CommodityDao {//TODO: Create Test
+public class CommodityDao {
 
     private JdbcTemplate jdbcTemplate;
 
@@ -74,7 +74,7 @@ public class CommodityDao {//TODO: Create Test
                     rs.getInt("CommodityID"),
                     rs.getString("CommodityName"),
                     rs.getInt("Prize"),
-                    rs.getInt("Iventory")
+                    rs.getInt("Inventory")
             );
         }
     }
