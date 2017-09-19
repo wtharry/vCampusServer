@@ -1,0 +1,6 @@
+javafx:
+    title: vCampusServer
+    appicons:
+      - /icon.jpg
+    stage:
+        resizable: false
